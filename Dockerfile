@@ -16,5 +16,5 @@ COPY . /app/
 # Открываем порт, на котором будет работать Django
 EXPOSE 8000
 
-# Команда для запуска сервера Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Запуск Gunicorn
+CMD ["gunicorn", "pancrm.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"]
