@@ -1,0 +1,52 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.log
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.db-journal
+media/
+static/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Docker
+.docker/
+docker-compose.override.yml
+Dockerfile*
+
+# Environment variables
+.env
+
+# Coverage
+.coverage
+.coverage.*
+
+# Test reports
+nosetests.xml
+coverage.xml
+*.cover
+
+# Other
+*.bak
+*.swp
+*.swo
